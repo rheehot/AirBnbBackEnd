@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# manage.py 파일이 가상 환경 속에서 파이썬 서버를 실행한다.
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
