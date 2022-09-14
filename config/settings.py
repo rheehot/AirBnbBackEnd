@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 CUSTOM_APPS = [
+    "common.apps.CommonConfig",
     "houses.apps.HousesConfig",
     "users.apps.UsersConfig",
     "rooms.apps.RoomsConfig"
