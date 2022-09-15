@@ -32,8 +32,8 @@ CUSTOM_APPS = [
     "common.apps.CommonConfig",
     "houses.apps.HousesConfig",
     "users.apps.UsersConfig",
-    "rooms.apps.RoomsConfig"
-    "experiences.apps.ExperiencesConfig"
+    "rooms.apps.RoomsConfig",
+    "experiences.apps.ExperiencesConfig",
 ]
 
 # Application definition

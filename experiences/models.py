@@ -14,7 +14,7 @@ class Experience(CommonModel):
     start_at = models.TimeField()
     end_at = models.TimeField()
     description = models.TextField()
-    perks = models.ManyToManyField("experiences.Perk", related_name="experiences",)
+    perks = models.ManyToManyField("experiences.Perk")
     
 class Perk(CommonModel):
     
