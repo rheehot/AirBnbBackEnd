@@ -4,7 +4,6 @@ from .models import Room, Amenity
 
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
-    pass
     list_display = (
         "name",
         "country",
@@ -18,12 +17,13 @@ class RoomAdmin(admin.ModelAdmin):
         "kind",
         "owner",
     )
-    list_filter = ("country", "city", "price", "rooms", "toilets", "pet_friendly" , "kind", "amenities",)
+    list_filter = ("country", "city", "price", "rooms", "toilets", "pet_friendly" , "kind", "amenities","created_at", "updated_at")
+    readonly_fields = ("created_at", "updated_at")
     # search_fields = ("^city", "^country",)
     
     
 @admin.register(Amenity)    
 class AmenityAdmin(admin.ModelAdmin):
-    pass
-    # list_display = ("name", "description",)
+    list_display = ("name", "description","created_at", "updated_at")
+    readonly_fields = ("created_at", "updated_at")
     # search_fields = ("^name",)
