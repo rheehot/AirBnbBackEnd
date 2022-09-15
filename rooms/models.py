@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from turtle import update
 from django.db import models
 from common.models import CommonModel
@@ -37,3 +38,6 @@ class Amenity(CommonModel):
     # rooms = models.ManyToManyField(Room, related_name="amenities")
     def __str__(self) -> str:
         return self.name
+    
+    class Meta:
+        verbose_name_plural = "Amenities"
